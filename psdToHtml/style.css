@@ -3,6 +3,9 @@
   padding: 0;
   list-style: none;
 }
+body {
+  padding-bottom: 600px;
+}
 h1 {
   margin: 30px;
 }
@@ -11,7 +14,7 @@ h1 {
   width: 520px;
   padding: 10px;
   box-shadow: 0px 0px 0px 1px #ccc;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h2 {
@@ -29,10 +32,13 @@ p {
 .pic img {
   border-radius: 50%;
 }
+/* ----------------------------------- */
+/* sample1 */
 .sample1 .pic {
   vertical-align: top;
 }
 
+/* sample2 */
 .sample2 .pic {
   width: 40px;
   box-sizing: border-box;
@@ -42,4 +48,32 @@ p {
   box-sizing: border-box;
   float: left;
   width: 480px;
+}
+.sample2:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* sample3 */
+.sample3 .pic {
+  width: 40px;
+  box-sizing: border-box;
+  float: left;
+}
+.sample3 .text {
+  box-sizing: border-box;
+  margin-left: 40px;
+}
+
+/* sample4 */
+.sample4 .pic {
+  width: 40px;
+  box-sizing: border-box;
+  float: left;
+}
+.sample4 .text {
+  box-sizing: border-box;
+  overflow: hidden;
 }
