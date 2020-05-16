@@ -144,3 +144,38 @@ p {
 .sample9 h2 img {
   border-radius: 50%;
 }
+
+/* sample10 */
+.sample10 {
+  display: grid;
+  grid-auto-rows: auto auto;
+  grid-auto-columns: 40px 1fr;
+  grid-template-areas:
+    'pic title'
+    '. text';
+}
+.sample10 .pic {
+  grid-area: pic;
+}
+.sample10 h2 {
+  grid-area: title;
+}
+.sample10 .text {
+  grid-area: text;
+}
+
+/* sample11 */
+.sample11 {
+  display: grid;
+  grid-auto-rows: auto auto;
+  grid-auto-columns: 40px 1fr;
+  grid-template-areas:
+    'pic text'
+    '. text';
+}
+.sample11 .pic {
+  grid-area: pic;
+}
+.sample11 .text {
+  grid-area: text;
+}
