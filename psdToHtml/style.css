@@ -77,3 +77,70 @@ p {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+/* sample5 */
+.sample5 {
+  position: relative;
+  height: 240px;
+}
+.sample5 .pic {
+  width: 40px;
+  position: absolute;
+}
+.sample5 .text {
+  position: absolute;
+  width: 460px;
+  left: 50px;
+}
+
+/* sample6 */
+
+.sample6 h2 {
+  padding-left: 40px;
+  text-indent: -40px;
+}
+.sample6 img {
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.sample6 p {
+  padding-left: 40px;
+}
+
+/* sample7 */
+.sample7 h2 {
+  background: url('https://picsum.photos/30/30?random=1') no-repeat;
+  padding-left: 40px;
+}
+.sample7 p {
+  padding-left: 40px;
+}
+
+/* sample8 */
+.sample8 {
+  padding-left: 50px;
+}
+.sample8 h2 {
+  text-indent: -40px;
+}
+.sample8 h2 img {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* sample9 */
+.sample9 {
+  display: flex;
+}
+.sample9 .pic {
+  flex: 0 0 30px;
+}
+.sample9 .text {
+  flex: 1 1 auto;
+}
+
+.sample9 h2 img {
+  border-radius: 50%;
+}
