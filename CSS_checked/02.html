@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .showcase {
+        width: 200px;
+        margin: auto;
+      }
+      .label-align {
+        display: inline-block;
+        margin-bottom: 6px;
+      }
       .btn-box {
+        vertical-align: middle;
         position: relative;
         display: inline-block;
         width: 40px;
@@ -48,11 +57,14 @@
       input[type='checkbox']:checked + .btn-box .btn {
         margin-left: 20px;
       }
+      .text {
+        vertical-align: middle;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <label>
+    <div class="showcase">
+      <label class="label-align">
         <input type="checkbox" name="" id="" class="checkbox" />
         <span class="btn-box">
           <span class="btn"></span>
