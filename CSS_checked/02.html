@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn-box {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        border-radius: 100px;
+        box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.13) inset;
+        overflow: hidden;
+      }
+      .btn-box::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 20px;
+        top: 10;
+        left: -30px;
+        background: linear-gradient(to right, #8f8 0%, #8f8 50%, #ccc 50%);
+        border-radius: 50px;
+        transition: 0.5s ease;
+        z-index: -1;
+      }
+      .btn-box .btn {
+        display: block;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-left: 0;
+        transition: 0.5s;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      .checkbox {
+        position: absolute;
+        opacity: 0;
+        background: transparent;
+      }
+      .checkbox:checked + .btn-box::after {
+        left: -10px;
+      }
+      input[type='checkbox']:checked + .btn-box .btn {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>
+        <input type="checkbox" name="" id="" class="checkbox" />
+        <span class="btn-box">
+          <span class="btn"></span>
+        </span>
+        <span class="text">我是文字</span>
+      </label>
+    </div>
+    <!-- <div>
+      <label>
+        <input type="checkbox" name="" id="" class="checkbox" />
+        <span class="btn-box"><span class="btn"></span></span>
+        <span class="text">我是文字</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" name="" id="" class="checkbox" />
+        <span class="btn-box"><span class="btn"></span></span>
+        <span class="text">我是文字</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" name="" id="" class="checkbox" />
+        <span class="btn-box"><span class="btn"></span></span>
+        <span class="text">我是文字</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" name="" id="" class="checkbox" />
+        <span class="btn-box"><span class="btn"></span></span>
+        <span class="text">我是文字</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" name="" id="" class="checkbox" />
+        <span class="btn-box"><span class="btn"></span></span>
+        <span class="text">我是文字</span>
+      </label>
+    </div> -->
+  </body>
+</html>
