@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .panel-group .content {
+        width: 0;
+        height: 0;
+        /* overflow: hidden is important*/
+        overflow: hidden;
+        padding: 0;
+        opacity: 0;
+      }
+      .panel-control:checked + label {
+        background-color: #fff;
+      }
+      .panel-control:checked + label + .content {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        opacity: 1;
+        transition: opacity 1s;
+      }
+      .panel-group {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .panel-group input {
+        position: absolute;
+        opacity: 0;
+      }
+      .panel-group label {
+        order: -1;
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        margin-right: 6px;
+        position: relative;
+        bottom: -1px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel-group">
+      <input
+        type="radio"
+        name="radio"
+        id="radio1"
+        class="panel-control"
+        checked
+      />
+      <label for="radio1">Tab1</label>
+      <div class="content">
+        1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a illum
+        adipisci vero earum tenetur placeat ea sed enim aliquid.
+      </div>
+
+      <input type="radio" name="radio" id="radio2" class="panel-control" />
+      <label for="radio2">Tab2</label>
+      <div class="content">
+        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a illum
+        adipisci vero earum tenetur placeat ea sed enim aliquid.
+      </div>
+
+      <input type="radio" name="radio" id="radio3" class="panel-control" />
+      <label for="radio3">Tab3</label>
+      <div class="content">
+        3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a illum
+        adipisci vero earum tenetur placeat ea sed enim aliquid.
+      </div>
+
+      <input type="radio" name="radio" id="radio4" class="panel-control" />
+      <label for="radio4">Tab4</label>
+      <div class="content">
+        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a illum
+        adipisci vero earum tenetur placeat ea sed enim aliquid. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Reiciendis at quod nulla
+        ipsum vitae aperiam a voluptates accusantium nihil qui! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Eveniet repellendus harum
+        voluptatum amet sunt, error consequatur dolore quidem. Laudantium ab
+        quae odio magnam asperiores! Repellendus provident voluptates totam
+        tenetur dolorum?
+      </div>
+
+      <input type="radio" name="radio" id="radio5" class="panel-control" />
+      <label for="radio5">Tab5</label>
+      <div class="content">
+        5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a illum
+        adipisci vero earum tenetur placeat ea sed enim aliquid.
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        deserunt unde porro sequi iure. Soluta molestias sit vitae, fugit fugiat
+        cumque voluptas rem quo beatae, earum odit ipsa nobis laudantium?
+      </p>
+      <p>
+        Consectetur saepe laudantium illum eos dolores. Consequuntur, minus
+        ratione? Dicta tempore quisquam earum pariatur quis quia commodi
+        distinctio fuga minus, nihil id reprehenderit, quas, blanditiis tenetur
+        beatae rerum repellat minima.
+      </p>
+      <p>
+        Sunt fugit neque illo enim est perferendis cumque? Quaerat sit delectus
+        culpa eos nemo. Illum minus doloremque, nostrum, iusto temporibus
+        tempore at ipsa aliquid molestias cum, recusandae magnam explicabo
+        quibusdam.
+      </p>
+    </div>
+  </body>
+</html>
