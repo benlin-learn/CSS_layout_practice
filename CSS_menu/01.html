@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .menu {
+        background-color: #000;
+        text-align: center;
+      }
+      .menu li {
+        display: inline-block;
+        position: relative;
+      }
+      .menu li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 6px 20px;
+      }
+      .menu li:hover,
+      .menu li a:hover {
+        background-color: #fa0;
+      }
+      .subMenu {
+        position: absolute;
+        background-color: #f00;
+        /* display: none; */
+        width: 8em;
+        /* left: -2000px; */
+        height: 0;
+        overflow: hidden;
+      }
+      .subMenu li {
+        display: block;
+      }
+      li:hover .subMenu {
+        /* left: 0; */
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="#">link</a></li>
+      <li>
+        <a href="#">link</a>
+        <ul class="subMenu">
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+        </ul>
+      </li>
+      <li><a href="#">link</a></li>
+      <li>
+        <a href="#">link</a>
+        <ul class="subMenu">
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+          <li><a href="#">sub link</a></li>
+        </ul>
+      </li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+    </ul>
+  </body>
+</html>
