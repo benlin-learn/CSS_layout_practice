@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .panel-control {
+        position: absolute;
+        opacity: 0;
+      }
+      .tab-group label {
+        display: inline-block;
+        padding: 10px 30px;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        background-color: #ccc;
+        bottom: -1px;
+        position: relative;
+      }
+      .content-group {
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+      .content {
+        display: none;
+      }
+      /* .content1 {
+        display: block;
+      } */
+      .tab-group .active {
+        /* background-color: #fff; */
+      }
+
+      #radio1:checked ~ .tab-group [for='radio1'],
+      #radio2:checked ~ .tab-group [for='radio2'],
+      #radio3:checked ~ .tab-group [for='radio3'],
+      #radio4:checked ~ .tab-group [for='radio4'],
+      #radio5:checked ~ .tab-group [for='radio5'] {
+        background-color: #fff;
+      }
+
+      #radio1:checked ~ .content-group .content1,
+      #radio2:checked ~ .content-group .content2,
+      #radio3:checked ~ .content-group .content3,
+      #radio4:checked ~ .content-group .content4,
+      #radio5:checked ~ .content-group .content5 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel-group">
+      <input
+        type="radio"
+        name="panel-radio"
+        id="radio1"
+        class="panel-control"
+        checked
+      />
+      <input
+        type="radio"
+        name="panel-radio"
+        id="radio2"
+        class="panel-control"
+      />
+      <input
+        type="radio"
+        name="panel-radio"
+        id="radio3"
+        class="panel-control"
+      />
+      <input
+        type="radio"
+        name="panel-radio"
+        id="radio4"
+        class="panel-control"
+      />
+      <input
+        type="radio"
+        name="panel-radio"
+        id="radio5"
+        class="panel-control"
+      />
+
+      <div class="tab-group">
+        <label for="radio1" class="active">tab1</label>
+        <label for="radio2">tab2</label>
+        <label for="radio3">tab3</label>
+        <label for="radio4">tab4</label>
+        <label for="radio5">tab5</label>
+      </div>
+      <div class="content-group">
+        <div class="content content1">
+          content1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloremque incidunt, autem voluptatem laboriosam voluptatum tempore
+          esse tenetur expedita quas nemo cum possimus adipisci omnis optio
+          magnam hic voluptates reiciendis! Ipsum.
+        </div>
+        <div class="content content2">
+          content2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloremque incidunt, autem voluptatem laboriosam voluptatum tempore
+          esse tenetur expedita quas nemo cum possimus adipisci omnis optio
+          magnam hic voluptates reiciendis! Ipsum.
+        </div>
+        <div class="content content3">
+          content3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloremque incidunt, autem voluptatem laboriosam voluptatum tempore
+          esse tenetur expedita quas nemo cum possimus adipisci omnis optio
+          magnam hic voluptates reiciendis! Ipsum.
+        </div>
+        <div class="content content4">
+          content4 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloremque incidunt, autem voluptatem laboriosam voluptatum tempore
+          esse tenetur expedita quas nemo cum possimus adipisci omnis optio
+          magnam hic voluptates reiciendis! Ipsum.
+        </div>
+        <div class="content content5">
+          content5 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloremque incidunt, autem voluptatem laboriosam voluptatum tempore
+          esse tenetur expedita quas nemo cum possimus adipisci omnis optio
+          magnam hic voluptates reiciendis! Ipsum.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
