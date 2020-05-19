@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .rwd-table {
+        width: 80%;
+        margin: auto;
+        border: 2px solid #f00;
+      }
+      th,
+      td {
+        border: 1px solid #00f;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 767px) {
+        .rwd-table {
+          border: none;
+        }
+        .rwd-table thead {
+          display: none;
+        }
+        .rwd-table tr {
+          display: block;
+          border: 1px solid #000;
+          margin-bottom: 20px;
+        }
+
+        .rwd-table td {
+          display: block;
+          text-align: left;
+          border: none;
+          margin-left: 5em;
+          text-indent: -5.3em;
+        }
+        .rwd-table td::before {
+          content: attr(data-title) ' : ';
+          color: #f00;
+          display: inline-block;
+          /* inline block 有 block 特性才能設定寬度 */
+          width: 5em;
+          text-align: right;
+          padding-right: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="rwd-table">
+      <thead>
+        <tr>
+          <th>編號</th>
+          <th>名稱</th>
+          <th>規格</th>
+          <th>數量</th>
+          <th>價格</th>
+          <th>備註訊息</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td data-title="編號">001</td>
+          <td data-title="名稱">鐵人獎杯</td>
+          <td data-title="規格">15*30cm</td>
+          <td data-title="數量">2</td>
+          <td data-title="價格">100</td>
+          <!-- prettier-ignore -->
+          <td data-title="備註訊息">可典當可典當可典當可典當可典當可典當可典當可典當可典當可典當可典當可典當可典當可典當可典當</td>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>鐵人獎杯</td>
+          <td>15*30cm</td>
+          <td>2</td>
+          <td>100</td>
+          <td>可典當</td>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>鐵人獎杯</td>
+          <td>15*30cm</td>
+          <td>2</td>
+          <td>100</td>
+          <td>可典當</td>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>鐵人獎杯</td>
+          <td>15*30cm</td>
+          <td>2</td>
+          <td>100</td>
+          <td>可典當</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
