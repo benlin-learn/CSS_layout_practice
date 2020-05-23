@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .step {
+        width: 500px;
+        margin: 100px auto;
+        /* outline: 1px solid #ccc; */
+        display: flex;
+        justify-content: space-between;
+      }
+      .step li {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        position: relative;
+      }
+      .step li:not(:first-child):before {
+        content: '';
+        /* 300 / 4 = 75px */
+        width: 187.5%;
+        height: 10px;
+        background-color: #afa;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        margin: auto;
+      }
+      .step li.active {
+        background-color: rgb(4, 153, 12);
+      }
+      .step li.active ~ li {
+        background-color: #cccccc;
+      }
+      .step li.active ~ li::before {
+        background-color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="step">
+      <li>1</li>
+      <li>2</li>
+      <li class="active">3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </body>
+</html>
