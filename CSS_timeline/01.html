@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      } */
+      .timeline {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .timeline li {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        position: relative;
+      }
+      .timeline li .pic {
+        width: 46%;
+      }
+      .timeline li .pic img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .timeline li .txt {
+        width: 46%;
+        background-color: #ccc;
+      }
+      .timeline li:before {
+        content: '';
+        position: absolute;
+        width: 8%;
+        height: 2px;
+        background-color: #ccc;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .timeline li::after {
+        content: '';
+        height: 120%;
+        width: 2px;
+        background-color: #ccc;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .timeline li:first-child::after {
+        top: 50%;
+      }
+      .timeline li:last-child::after {
+        bottom: 50%;
+      }
+      .timeline li .txt::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="timeline">
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <h3>title</h3>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <h3>title</h3>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <h3>title</h3>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <h3>title</h3>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <h3>title</h3>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <h3>title</h3>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

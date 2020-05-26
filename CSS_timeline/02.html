@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      } */
+      .timeline {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .timeline li {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        position: relative;
+      }
+      .timeline li .pic {
+        width: 46%;
+        position: relative;
+        z-index: 2;
+      }
+      .timeline li .pic img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .timeline li .txt {
+        width: 46%;
+        /* background-color: #ccc; */
+        box-sizing: border-box;
+        padding: 20px;
+        outline: 1px solid #ccc;
+      }
+      .timeline li .txt h3 {
+        /* background-color: #f0a; */
+        height: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      /* 橫線 - 對齊 title 下方，title字多可以自動換行 */
+      .timeline li .txt h3::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        background-color: #ccc;
+        margin: auto;
+        margin-top: 0.5rem;
+      }
+      /* 直線 */
+      .timeline li .txt .title h3::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-right: 2px solid #ccc;
+        width: 50%;
+        height: 120%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /* outline: 1px solid burlywood; */
+      }
+      /* 直線最後一段 */
+      .timeline li:last-child .txt h3::before {
+        /* height: 100%;
+        bottom: 50%; */
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="timeline">
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+        <div class="txt">
+          <div class="title">
+            <h3>
+              把你帶來出處證券你還出了程式第二次不是很可以用，我對看不到。
+              把你帶來出處證券你還出了程式第二次不是很可以用，我對看不到。
+            </h3>
+          </div>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+            信用產業上一頁自己研究所，素質是有原本進行欣賞還沒有你們孤獨勞動或許非常這段下了，絶對會在身後世紀，事實為止滑鼠困難參數壓縮自己的認為掌握為何，執行環境文件大小回憶，效果故事，也能覺得瞬間楠雅氣息，無數以為財政一級各地為何主要電子郵件出席小說多少有的放心。
+            同學但我，激動轉移最快不出真實性不知變得，低價連續字體資產咖啡展開一句話一家清楚不知版面背景分公司，自行方式領先國有，而在台北，說道逐步對付通訊是我線上瀏覽次數，好激動斑竹打了小遊戲複製農民便宜文件大小，習慣作者大連創建，主體產業歷史碩士網頁重複總統，晚。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+
+        <div class="txt">
+          <div class="title">
+            <h3>title</h3>
+          </div>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+
+        <div class="txt">
+          <div class="title">
+            <h3>title</h3>
+          </div>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+
+        <div class="txt">
+          <div class="title">
+            <h3>title</h3>
+          </div>
+
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+
+        <div class="txt">
+          <div class="title">
+            <h3>title</h3>
+          </div>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="pic">
+          <img src="https://picsum.photos/350/200?random=1" />
+        </div>
+
+        <div class="txt">
+          <div class="title">
+            <h3>
+              把你帶來出處證券你還出了程式第二次不是很可以用，我對看不到。
+              把你帶來出處證券你還出了程式第二次不是很可以用，我對看不到。
+            </h3>
+          </div>
+          <p>
+            女兒教學，官員會有部落格，依舊自信，各級應該財產興趣你好發表就在大家把你後面會議隊伍帶來高度，無法。
+          </p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
