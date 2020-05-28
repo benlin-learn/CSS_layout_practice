@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      :root {
+        --width: 14.285714285%;
+      }
+      .calendar {
+        width: 600px;
+        border: 3px double #666;
+        margin: 100px auto;
+      }
+      .calendar li {
+        width: var(--width);
+        box-sizing: border-box;
+        padding: 4px;
+        text-align: center;
+      }
+      .calendar ul {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .m-list {
+        background-color: #333;
+        color: #ffffff;
+      }
+      .m-list li {
+        border: 1px solid #fff;
+      }
+
+      .day-list li {
+        background-color: #fff;
+        transform: scale(1);
+      }
+      /* 日 */
+      .first-0.day-list li:nth-of-type(7n + 1) {
+        background-color: #faf;
+      }
+      .first-1.day-list li:nth-of-type(7n) {
+        background-color: #faf;
+      }
+      .first-2.day-list li:nth-of-type(7n + 6) {
+        background-color: #faf;
+      }
+      .first-3.day-list li:nth-of-type(7n + 5) {
+        background-color: #faf;
+      }
+      .first-4.day-list li:nth-of-type(7n + 4) {
+        background-color: #faf;
+      }
+      .first-5.day-list li:nth-of-type(7n + 3) {
+        background-color: #faf;
+      }
+      .first-6.day-list li:nth-of-type(7n + 2) {
+        background-color: #faf;
+      }
+      /* 六 */
+      .first-0.day-list li:nth-of-type(7n) {
+        background-color: #afa;
+      }
+      .first-1.day-list li:nth-of-type(7n + 6) {
+        background-color: #afa;
+      }
+      .first-2.day-list li:nth-of-type(7n + 5) {
+        background-color: #afa;
+      }
+      .first-3.day-list li:nth-of-type(7n + 4) {
+        background-color: #afa;
+      }
+      .first-4.day-list li:nth-of-type(7n + 3) {
+        background-color: #afa;
+      }
+      .first-5.day-list li:nth-of-type(7n + 2) {
+        background-color: #afa;
+      }
+      .first-6.day-list li:nth-of-type(7n + 1) {
+        background-color: #afa;
+      }
+
+      .day-list li.active {
+        background-color: #ccc;
+      }
+      .day-list li:hover {
+        transform: scale(1.1);
+        background-color: #345a99;
+        color: #fff;
+        z-index: 2;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .day-list li:empty,
+      .day-list li:empty {
+        cursor: default;
+        background-color: transparent;
+        transform: scale(1);
+      }
+
+      .first-0 {
+      }
+      .first-1 li:first-child {
+        margin-left: calc(var(--width) * 1);
+      }
+      .first-2 li:first-child {
+        margin-left: calc(var(--width) * 2);
+      }
+      .first-3 li:first-child {
+        margin-left: calc(var(--width) * 3);
+      }
+      .first-4 li:first-child {
+        margin-left: calc(var(--width) * 4);
+      }
+      .first-5 li:first-child {
+        margin-left: calc(var(--width) * 5);
+      }
+      .first-6 li:first-child {
+        margin-left: calc(var(--width) * 6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar">
+      <ul class="m-list">
+        <li>日</li>
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+      </ul>
+      <ul class="day-list first-6">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li class="active">12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+      </ul>
+    </div>
+  </body>
+</html>
