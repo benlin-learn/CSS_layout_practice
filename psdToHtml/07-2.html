@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>導覽列 變化</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        background-color: #ccc;
+      }
+      .main-header {
+        width: 100%;
+
+        display: flex;
+        background-color: #1d428a;
+      }
+      .main-header .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        /* height: 100%; */
+        margin: auto;
+      }
+      .logo {
+        /* display: flex; */
+        width: 40px;
+        height: 40px;
+        min-width: 50px;
+        min-height: 50px;
+        margin: 0 20px;
+      }
+      .logo img {
+        width: 100%;
+
+        vertical-align: middle;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+      }
+      .navleft {
+        width: 500px;
+        justify-content: flex-end;
+        order: -1;
+      }
+      .navright {
+        width: 500px;
+        justify-content: flex-start;
+      }
+      .nav a {
+        display: block;
+        background-color: #1d428a;
+
+        text-decoration: none;
+        padding: 30px 20px;
+        color: #fff;
+
+        position: relative;
+        transition: transform 0.3s;
+      }
+
+      .nav a:after {
+        content: '';
+        position: absolute;
+        /* top: 0; */
+        left: 50%;
+        right: 50%;
+        bottom: 20px;
+
+        border-bottom: 1px solid #fff;
+        transition: left 0.4s, right 0.4s;
+      }
+      .nav a:hover:after {
+        left: 0;
+        right: 0;
+      }
+      .nav a:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="https://images.ctfassets.net/a4rx79jcl3n1/139uoz1HBz6PsWh8pEqOCK/eced155325ccb92acf76962ca5d688e5/gsw-logo-1920.png"
+            alt=""
+          />
+        </div>
+        <div class="nav navleft">
+          <a href="#">TICKETS</a>
+          <a href="#">SCHEDULE</a>
+          <a href="#">TEAM</a>
+        </div>
+        <div class="nav navright">
+          <a href="#">SHOP</a>
+          <a href="#">CHASE CENTER</a>
+          <a href="#">CONTACTS</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
