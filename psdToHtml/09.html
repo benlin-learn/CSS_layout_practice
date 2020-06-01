@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>網站麵包屑</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        background-color: #593074;
+      }
+      .wrap {
+        padding: 10px 0;
+        background-color: #ec008b;
+      }
+      .breadcrumb {
+        width: 600px;
+        margin: auto;
+        display: flex;
+      }
+      .breadcrumb li {
+        padding: 0 20px;
+      }
+      .breadcrumb li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .breadcrumb li a:hover,
+      .breadcrumb li:last-child a {
+        color: #ff0;
+      }
+      .breadcrumb li + li {
+        padding-left: 0;
+      }
+      .breadcrumb li + li::before {
+        content: '>>';
+        color: #fff;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul class="breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">中正區</a></li>
+        <li><a href="#">幸市里</a></li>
+        <li><a href="#">里公佈欄</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
