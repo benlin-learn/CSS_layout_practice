@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>破格式設計</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        height: 100vh;
+        background: linear-gradient(135deg, #e29b8b, #fff);
+        display: flex;
+        align-items: center;
+      }
+
+      .wrap {
+        width: 800px;
+
+        margin: auto;
+        display: flex;
+        /* background-color: #999; */
+        align-items: center;
+        padding-top: 60px;
+      }
+      .item {
+        box-sizing: border-box;
+        width: 400px;
+        margin: 0 15px;
+        padding: 30px 15px 15px 15px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        border: 10px solid #efc0b4;
+        box-shadow: 5px 5px 10px #e6a795;
+      }
+      .item .icon {
+        width: 120px;
+        height: 120px;
+        margin: -90px auto 0;
+        background-color: #f00;
+        background-color: #fff;
+        border-radius: 50%;
+        line-height: 120px;
+        font-size: 60px;
+        color: #e6a795;
+        position: relative;
+      }
+      .item .icon::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-top: 10px solid #efc0b4;
+        border-right: 10px solid #efc0b4;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+
+        top: -10px;
+        left: -10px;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+      }
+      .item h3 {
+        font-size: 24px;
+        margin: 1em 0 0.5em 0;
+        color: #e6a795;
+      }
+      .item p {
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <div class="icon">
+          <i class="fas fa-hammer"></i>
+        </div>
+        <div class="txt">
+          <h3>發揮好多又</h3>
+          <p>
+            又是蒐集專用中文版當地手術可惜不去隱藏硬體那裡特色上網小姐，皮膚記憶，採取水果電器嚴重休閒，每次能不出歌詞分類回憶所有人最好跟着情節不停次數指南答案工具，老。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class="fas fa-thumbs-up"></i>
+        </div>
+        <div class="txt">
+          <h3>發揮好多又有</h3>
+          <p>
+            又是蒐集專用中文版當地手術可惜不去隱藏硬體那裡特色上網小姐，皮膚記憶，採取水果電器嚴重休閒，每次能不出歌詞分類回憶所有人最好跟着情節不停次數指南答案工具，老。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="txt">
+          <h3>發揮好</h3>
+          <p>
+            又是蒐集專用中文版當地手術可惜不去隱藏硬體那裡特色上網小姐，皮膚記憶，採取水果電器嚴重休閒，每次能不出歌詞分類回憶所有人最好跟着情節不停次數指南答案工具，老。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
