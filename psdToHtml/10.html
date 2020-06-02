@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方塊酥版面</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        background-color: #ccc;
+      }
+      .wrap {
+        width: 800px;
+        margin: auto;
+        display: flex;
+      }
+      .box {
+        width: 400px;
+        position: relative;
+      }
+      .box img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .box-cut {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+      .box1 .txt,
+      .box2 .txt {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      .box1 .txt h3,
+      .box2 .txt h3 {
+        margin-bottom: 1em;
+      }
+
+      .box1:hover .txt,
+      .box2:hover .txt {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box box1">
+        <img src="https://picsum.photos/400/400?random=1" />
+        <div class="txt">
+          <h3>花蓮更新點此，投票。</h3>
+          <p>
+            神話臺中審批大聲在於可憐魅力有着作業鐵路，激烈接收解放內部是從，寬頻並且字幕後果拒絶留在提前，部分會計避免，都不想像操作系統規律幾個讓我們的確大力隨便就要，財經好評熟悉合理改進日前美元高手好看。
+          </p>
+        </div>
+      </div>
+      <div class="box box-cut">
+        <div class="box2">
+          <img src="https://picsum.photos/400/400?random=2" />
+          <div class="txt">
+            <h3>花蓮更新投票。</h3>
+            <p>
+              神話臺中審批大聲在於可憐魅力有着作業鐵路，激烈接收解放內部是從，寬頻並且字幕後果拒絶留在提前。
+            </p>
+          </div>
+        </div>
+        <div class="box2">
+          <img src="https://picsum.photos/400/400?random=3" />
+          <div class="txt">
+            <h3>花蓮更新點投票。</h3>
+            <p>
+              神話臺中審批大聲在於可憐魅力有着作業鐵路，激烈接收解放內部是從，寬頻並且字幕後果拒絶留在提前。
+            </p>
+          </div>
+        </div>
+        <div class="box2">
+          <img src="https://picsum.photos/400/400?random=4" />
+          <div class="txt">
+            <h3>花蓮更新點投票。</h3>
+            <p>
+              神話臺中審批大聲在於可憐魅力有着作業鐵路，激烈接收解放內部是從，寬頻並且字幕後果拒絶留在提前。
+            </p>
+          </div>
+        </div>
+        <div class="box2">
+          <img src="https://picsum.photos/400/400?random=5" />
+          <div class="txt">
+            <h3>花蓮更新點投票。</h3>
+            <p>
+              神話臺中審批大聲在於可憐魅力有着作業鐵路，激烈接收解放內部是從，寬頻並且字幕後果拒絶留在提前。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
