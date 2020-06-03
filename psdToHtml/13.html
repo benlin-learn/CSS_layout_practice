@@ -59,17 +59,23 @@
         border-left: transparent;
         padding-right: 10px;
         border-radius: 0 200px 200px 0;
+        cursor: pointer;
       }
-      .sideNav form input[type='search']:focus {
+      .sideNav form button i {
+        transform: scale(1);
+        transition: transform 0.3s;
+      }
+      .sideNav form button:hover i {
+        transform: scale(1.3);
+      }
+      .sideNav form input[type='search']:focus,
+      .sideNav form button:focus {
         outline: none;
       }
       .sideNav .sideNav .nav {
         display: flex;
         flex-direction: column;
       }
-      /* .sideNav .nav li {
-        transition: display 0.3s ease;
-      } */
       .sideNav .nav li a {
         /* background-color: #ccc; */
         display: block;
